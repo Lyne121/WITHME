@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#D4F4FA"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="200dp"
+        android:textSize="20dp"
+        android:text="다이어트는"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WITH ME"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:textColor="#FFFFFF"
+        android:shadowRadius="7.0"
+        android:shadowColor="#000000"
+        android:shadowDx="7.0"
+        android:shadowDy="7.0"
+
+        />
+
+    <TextView
+        android:paddingTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="방문 1:1 선생님과 함께"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -7,9 +7,53 @@
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
+    //상단바
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#D4F4FA"
+            android:textColor="#000000"
+            android:text="선생님 찾기" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#D4F4FA"
+            android:textColor="#000000"
+            android:text="고객 찾기" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D4F4FA"
+            android:textColor="#000000"
+            android:text="다이어트 게시판" />
+
+    </LinearLayout>
+
+
+    // 중간 내용물 (스크롤)
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+    </ScrollView>
+
+    // 하단바
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         >
 
         <Button

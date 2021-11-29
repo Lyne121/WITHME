@@ -10,20 +10,20 @@
     //상단바
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         >
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#D4F4FA"
             android:textColor="#000000"
             android:text="선생님 찾기" />
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#D4F4FA"
             android:textColor="#000000"
@@ -31,54 +31,127 @@
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:backgroundTint="#D4F4FA"
             android:textColor="#000000"
             android:text="다이어트 게시판" />
 
     </LinearLayout>
 
+    //내용물
 
-    // 중간 내용물 (스크롤)
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="0"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        // 내용물 1. 필터
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="필터" />
 
-    </ScrollView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D4F4FA"
+                    android:textColor="#000000"
+                    android:text="지역" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D4F4FA"
+                    android:textColor="#000000"
+                    android:text="성별" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D4F4FA"
+                    android:textColor="#000000"
+                    android:text="목적" />
+
+
+            </LinearLayout>
+
+            // 내용물 2.스크롤
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내용물" />
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
     // 하단바
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         >
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#D4F4FA"
             android:textColor="#000000"
-            android:text="선생님 찾기" />
+            android:text="홈" />
+
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#D4F4FA"
             android:textColor="#000000"
-            android:text="고객 찾기" />
+            android:text="내정보" />
+
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:backgroundTint="#D4F4FA"
             android:textColor="#000000"
-            android:text="다이어트 게시판" />
+            android:text="설정" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:backgroundTint="#D4F4FA"
+            android:textColor="#000000"
+            android:text="도움말" />
 
     </LinearLayout>
+
+
 
 
 

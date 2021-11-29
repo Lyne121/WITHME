@@ -43,7 +43,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
         android:padding="10dp">
@@ -57,8 +57,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -67,21 +67,21 @@
 
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#D4F4FA"
                     android:textColor="#000000"
                     android:text="지역" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#D4F4FA"
                     android:textColor="#000000"
                     android:text="성별" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#D4F4FA"
                     android:textColor="#000000"
@@ -90,21 +90,25 @@
 
             </LinearLayout>
 
-            // 내용물 2.스크롤
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="내용물" />
-
-
-            </ScrollView>
 
         </LinearLayout>
+
+        // 내용물 2.스크롤
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내용물" />
+
+
+        </ScrollView>
+
 
     </LinearLayout>
 

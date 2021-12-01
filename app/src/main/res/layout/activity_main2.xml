@@ -7,40 +7,138 @@
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
-    //상단바
+<!--    상단바 (WITHME 로고, 새로고침)-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#4374D9">
+
+<!--        WITHME 로고 넣기 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:text="WITH ME" />
+
+<!--        새로고침 버튼 -->
+
+    </LinearLayout>
+
+<!--    선생님찾기/고객찾기/다이어트게시판 버튼  ### 위랑 딱 붙이고 싶은데.. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
         >
+
+<!--        버튼  ### 선택하면 다른 색상이 되도록 .. -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#4374D9"
+            android:text="선생님 찾기"
+            android:textColor="#000000" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#D4F4FA"
-            android:textColor="#000000"
-            android:text="선생님 찾기" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#D4F4FA"
+            android:backgroundTint="#4374D9"
             android:textColor="#000000"
             android:text="고객 찾기" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:backgroundTint="#D4F4FA"
+            android:backgroundTint="#4374D9"
             android:textColor="#000000"
             android:text="다이어트 게시판" />
 
     </LinearLayout>
 
-    //내용물
+<!--전체보기, 찜보기, 신청내역 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="#000000"
+            android:text="전체보기" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="#000000"
+            android:text="찜 보기" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="#000000"
+            android:text="신청 내역" />
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="트레이닝" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="성별" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="지역" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="세부지역" />
+
+
+    </LinearLayout>
+
+
+    <!--    내용물-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -48,53 +146,23 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        // 내용물 1. 필터
+
+
+
+
+<!--        내용물 1. 필터-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="필터" />
-
-
-                <Button
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#D4F4FA"
-                    android:textColor="#000000"
-                    android:text="지역" />
-
-                <Button
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#D4F4FA"
-                    android:textColor="#000000"
-                    android:text="성별" />
-
-                <Button
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#D4F4FA"
-                    android:textColor="#000000"
-                    android:text="목적" />
-
-
-            </LinearLayout>
 
 
 
         </LinearLayout>
 
-        // 내용물 2.스크롤
+<!--        내용물 2.스크롤-->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -114,10 +182,10 @@
 
 
 
-    // 하단바
+<!--    하단바-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         >
 
@@ -125,7 +193,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#D4F4FA"
+            android:backgroundTint="#4374D9"
             android:textColor="#000000"
             android:text="홈" />
 
@@ -133,7 +201,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#D4F4FA"
+            android:backgroundTint="#4374D9"
             android:textColor="#000000"
             android:text="내정보" />
 
@@ -141,7 +209,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:backgroundTint="#D4F4FA"
+            android:backgroundTint="#4374D9"
             android:textColor="#000000"
             android:text="설정" />
 
@@ -149,7 +217,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:backgroundTint="#D4F4FA"
+            android:backgroundTint="#4374D9"
             android:textColor="#000000"
             android:text="도움말" />
 

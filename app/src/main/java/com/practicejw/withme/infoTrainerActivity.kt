@@ -6,6 +6,6 @@ import android.os.Bundle
 class infoTrainerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_info_T)
+        setContentView(R.layout.info_trainer_activity)
     }
 }

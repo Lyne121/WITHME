@@ -6,6 +6,6 @@ import android.os.Bundle
 class mainSearchTActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_searchT)
+        setContentView(R.layout.main_search_t_activity)
     }
 }

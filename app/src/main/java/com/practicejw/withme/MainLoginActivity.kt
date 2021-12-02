@@ -3,6 +3,7 @@ package com.practicejw.withme
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.activity_main_login.*
 import retrofit2.Call
@@ -31,6 +32,24 @@ class MainLoginActivity : BaseActivity() {
                     response: Response<BasicResponse>
                 ) {
 //                    서버에 잘 다녀왔을 때 해줄 일
+
+                    if(response.isSuccessful) {
+
+//                        로그인 시도 > 로그인 성공인 경우
+//                        해야할 일 : 화면 이동 (Intent)
+                        val myIntent = Intent(this@MainLoginActivity, mainSearchTActivity::class.java)
+                        startActivity(myIntent)
+
+                        finish()
+
+
+                    }
+                    else {
+//                        로그인 시도 > 아이디/비번 실패
+//                        해야할 일 : 토스트 출력 (로그인에 실패했습니다.)
+                        Toast.makeText(this@MainLoginActivity, "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show()
+
+                    }
 
                 }
 

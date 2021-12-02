@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WITHME">
         <activity
-            android:name=".main_login_activity"
+            android:name=".MainLoginActivity"
             android:exported="false" />
         <activity
             android:name=".joinFirstActivity"

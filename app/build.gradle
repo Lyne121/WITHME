@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+//    extensions은 21년 지원 종료 > 바꿔줘야함
 }
 
 android {

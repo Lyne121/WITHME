@@ -10,18 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WITHME">
         <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/buttonborders" />
-
-        <activity
-            android:name=".MainActivity2"
+            android:name=".JoinFirstActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainLogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoTrainerActivity"
+            android:exported="false" />
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.actions"-->
+<!--            android:resource="@xml/buttonborders" />-->
+
+        <activity
+            android:name=".MainSearchTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainLodingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

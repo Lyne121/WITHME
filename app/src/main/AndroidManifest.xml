@@ -10,24 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WITHME">
         <activity
-            android:name=".JoinFirstActivity"
+            android:name=".main_login_activity"
             android:exported="false" />
         <activity
-            android:name=".MainLogInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".InfoTrainerActivity"
+            android:name=".joinFirstActivity"
             android:exported="false" />
 
-<!--        <meta-data-->
-<!--            android:name="com.google.android.actions"-->
-<!--            android:resource="@xml/buttonborders" />-->
-
         <activity
-            android:name=".MainSearchTActivity"
+            android:name=".infoTrainerActivity"
+            android:exported="false" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.actions" -->
+        <!-- android:resource="@xml/buttonborders" /> -->
+        <activity
+            android:name=".mainSearchTActivity"
             android:exported="false" />
         <activity
-            android:name=".MainLodingActivity"
+            android:name=".mainLodingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

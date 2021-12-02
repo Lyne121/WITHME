@@ -3,7 +3,7 @@ package com.practicejw.withme
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainLodingActivity : AppCompatActivity() {
+class mainLodingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.MainLodingActivity)

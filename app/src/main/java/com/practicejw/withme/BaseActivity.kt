@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.practicejw.withme.api.ServerAPI
 import com.practicejw.withme.api.ServerAPIInterface
 
-class BaseActivity: AppCompatActivity() {
+abstract class BaseActivity: AppCompatActivity() {
 
 //    서버 기능 목록 -> 물려주자
 

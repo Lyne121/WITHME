@@ -53,10 +53,12 @@ class JoinUserActivity : BaseActivity() {
                         else {
 //                            회원가입 시도 > 회원가입 실패 : 필수 항목을 모두 작성해주세요
                             Toast.makeText(this@JoinUserActivity, "필수 항목을 모두 작성해주세요", Toast.LENGTH_SHORT).show()
-
                         }
+                }
+                override fun onFailure(call: Call<BasicResponse>, t: Throwable) {
+                }
 
-                } )
+                }  )
 
         }
     }

@@ -24,7 +24,5 @@ class mainLodingActivity : AppCompatActivity() {
 
 
     }
-// ### n초 뒤 화면이 자동전환되도록 해줘야함
-
 
 }

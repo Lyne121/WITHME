@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".mainSearchTActivity">
+    tools:context=".MainSearchTActivity">
 
 <!--    상단바 (WITHME 로고, 새로고침)-->
 

@@ -1,7 +1,6 @@
 package com.practicejw.withme
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.practicejw.withme.datas.BasicResponse
@@ -9,12 +8,14 @@ import kotlinx.android.synthetic.main.activity_main_login.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-
+// BaseActivity를 상속받게 설정해야 한다 !!
 class MainLoginActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_login)
 
+
+//        로그인 버튼 > 선생님찾기 페이지(메인페이지) 이동
         btnLogin.setOnClickListener {
 
 //            입력한 id/pw 변수에 저장
@@ -37,7 +38,7 @@ class MainLoginActivity : BaseActivity() {
 
 //                        로그인 시도 > 로그인 성공인 경우
 //                        해야할 일 : 화면 이동 (Intent)
-                        val myIntent = Intent(this@MainLoginActivity, mainSearchTActivity::class.java)
+                        val myIntent = Intent(this@MainLoginActivity, MainSearchTActivity::class.java)
                         startActivity(myIntent)
 
                         finish()
@@ -61,8 +62,9 @@ class MainLoginActivity : BaseActivity() {
 
         }
 
+//        회원가입 버튼 > 회원가입 페이지 이동
         btnJoin.setOnClickListener {
-            val intent = Intent(this, joinFirstActivity::class.java)
+            val intent = Intent(this, JoinFirstActivity::class.java)
             startActivity(intent)
 
         }

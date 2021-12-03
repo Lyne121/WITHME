@@ -12,8 +12,8 @@ abstract class BaseActivity: AppCompatActivity() {
 
     lateinit var apiService : ServerAPIInterface
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
 //        실제 서버 통신 전담 변수
         val retrofit = ServerAPI.getRetrofit()
@@ -21,7 +21,7 @@ abstract class BaseActivity: AppCompatActivity() {
 //        기능 목록에 결합해서 -> apiService 에 대입
         apiService = retrofit.create( ServerAPIInterface::class.java )
 
-
     }
+
 
 }

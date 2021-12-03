@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".joinFirstActivity"
+    tools:context=".JoinFirstActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
@@ -22,6 +22,7 @@
 <!--    트레이너예요 버튼. 이미지 버튼으로 교체 예정-->
 <!--    join_trainer(예정)으로 이동-->
     <Button
+        android:id="@+id/btnJoinTrainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -32,6 +33,7 @@
 <!--    다이어터예요 버튼 . 이미지 버튼으로 교체 예정-->
 <!--    join_user(예정)으로 이동-->
     <Button
+        android:id="@+id/btnJoinUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"

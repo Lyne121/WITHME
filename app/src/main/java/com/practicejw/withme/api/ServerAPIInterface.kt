@@ -24,6 +24,7 @@ interface ServerAPIInterface {
     ) : Call<BasicResponse>
 
 //    회원가입 기능
+    @FormUrlEncoded
     @PUT("/user")
     fun postRequestJoin(
 

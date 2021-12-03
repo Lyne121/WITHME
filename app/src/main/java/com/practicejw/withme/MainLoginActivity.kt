@@ -64,7 +64,7 @@ class MainLoginActivity : BaseActivity() {
 
 //        회원가입 버튼 > 회원가입 페이지 이동
         btnJoin.setOnClickListener {
-            val intent = Intent(this, JoinFirstActivity::class.java)
+            val intent = Intent(this, JoinTypeActivity::class.java)
             startActivity(intent)
 
         }

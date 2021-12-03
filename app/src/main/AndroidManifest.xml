@@ -18,7 +18,7 @@
             android:name=".MainLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".JoinFirstActivity"
+            android:name=".JoinTypeActivity"
             android:exported="false" />
         <activity
             android:name=".infoTrainerActivity"

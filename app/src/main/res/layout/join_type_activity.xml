@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinTypeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+<!--    상단바 : 회원가입 하기-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#4374D9"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="회 원 가 입" />
+
+<!--    트레이너예요 버튼. 이미지 버튼으로 교체 예정-->
+<!--    join_trainer(예정)으로 이동-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="가입 유형을 선택해주세요" />
+
+        <Button
+            android:id="@+id/btnJoinUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#4374D9"
+            android:text="일반 회원" />
+
+
+        <Button
+            android:id="@+id/btnJoinTrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#4374D9"
+            android:text="트레이너 선생님" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#4374D9"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

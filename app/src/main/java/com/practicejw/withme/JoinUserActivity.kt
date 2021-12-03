@@ -8,7 +8,7 @@ import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.activity_main_login.*
 import kotlinx.android.synthetic.main.join_user_activity.*
 import kotlinx.android.synthetic.main.join_user_activity.btnJoin
-import kotlinx.android.synthetic.main.join_user_activity.edtId
+import kotlinx.android.synthetic.main.join_user_activity.edtIdJoin
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
@@ -22,19 +22,19 @@ class JoinUserActivity : BaseActivity() {
         btnJoin.setOnClickListener {
 
 //            입력한 id, pw, nick, phone 변수에 저장
-            val inputId = edtId.text.toString()
-            val inputPw = edtPw.text.toString()
+            val inputIdJoin = edtIdJoin.text.toString()
+            val inputPwJoin = edtPwJoin.text.toString()
             val inputNick = edtNick.text.toString()
             val inputPhone = edtPhone.text.toString()
 
 //            서버에 로그인 요청 > BaseActivity가 물려준 서버 기능 목록 활용
 
             apiService.postRequestJoin(
-                inputId,
-                inputPw,
+                inputIdJoin,
+                inputPwJoin,
                 inputNick,
                 inputPhone
-                ).enqueue(object : Callback<BasicResponse> {
+                ).enqueue(object : retrofit2.Callback<BasicResponse> {
                     override fun onResponse(
                         call : Call<BasicResponse>,
                         response: Response<BasicResponse>

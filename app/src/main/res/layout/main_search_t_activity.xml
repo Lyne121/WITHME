@@ -26,7 +26,25 @@
             android:textColor="#FFFFFF"
             android:text="WITH ME" />
 
-<!--        새로고침 버튼 -->
+<!--        새로고침 . 우측으로 붙여야 함 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:background="#00000000"
+            android:textColor="#ffffff"
+            android:text="새로고침" />
+
+<!--        도움말 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:background="#00000000"
+            android:textColor="#ffffff"
+            android:text=" ? " />
+
+
 
     </LinearLayout>
 
@@ -51,15 +69,17 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#4374D9"
-            android:textColor="#000000"
-            android:text="고객 찾기" />
+            android:text="선생님 구해요"
+            android:textColor="#000000" />
+
+
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:backgroundTint="#4374D9"
             android:textColor="#000000"
-            android:text="다이어트 게시판" />
+            android:text="게시판" />
 
     </LinearLayout>
 
@@ -212,7 +232,7 @@
             android:layout_height="match_parent"
             android:backgroundTint="#4374D9"
             android:textColor="#000000"
-            android:text="설정" />
+            android:text="메시지함" />
 
         <Button
             android:layout_width="0dp"
@@ -220,7 +240,7 @@
             android:layout_height="match_parent"
             android:backgroundTint="#4374D9"
             android:textColor="#000000"
-            android:text="도움말" />
+            android:text="설정" />
 
     </LinearLayout>
 

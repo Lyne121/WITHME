@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyInfoActivity">
+
+<!--    상단바-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#4374D9"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="내  정 보" />
+
+<!--    사진 및 프로필 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+<!--        좌측 사진-->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+<!--        우측 프로필 박스-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"
+            android:background="#DADADA"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대표 홍보문구" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로필 수정" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="내 정보 인증하기" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="작성글 보기" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="성사 내역 (수수료 납부) " />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#00000000"
+            android:textColor="#000000"
+            android:text="회원 등급" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

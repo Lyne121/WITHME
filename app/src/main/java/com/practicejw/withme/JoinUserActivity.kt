@@ -44,7 +44,7 @@ class JoinUserActivity : BaseActivity() {
                         if(response.isSuccessful) {
 
 //                            회원가입 시도 > 회원가입 성공 : 화면이동
-                            val myIntent = Intent(this@JoinUserActivity, MainLoginActivity::class.java)
+                            val myIntent = Intent(this@JoinUserActivity, JoinFinishActivity::class.java)
                             startActivity(myIntent)
 
                             finish()

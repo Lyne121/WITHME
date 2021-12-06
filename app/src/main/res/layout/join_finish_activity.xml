@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:backgroundTint="#00000000"
+            android:background="#00000000"
             android:textColor="#000000"
             android:textSize="15sp"
             android:text="로그인 화면으로 이동하기" />

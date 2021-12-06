@@ -28,8 +28,6 @@ class ServerAPI {
             }
 //          실제 서버 통신 전담 클래스 작성
             return retrofit!!
-
         }
-
     }
 }

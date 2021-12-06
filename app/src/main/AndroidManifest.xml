@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WITHME">
         <activity
+            android:name=".JoinFinishActivity"
+            android:exported="false" />
+        <activity
             android:name=".JoinUserActivity"
             android:exported="false" />
         <activity

@@ -39,8 +39,8 @@ interface ServerAPIInterface {
     @POST("/user/find/password")
     fun postRequestFindPw(
 
-    @Field("email") email: String,
     @Field("nick_name") nick : String,
+    @Field("email") email: String,
 
     ) : Call<BasicResponse>
 

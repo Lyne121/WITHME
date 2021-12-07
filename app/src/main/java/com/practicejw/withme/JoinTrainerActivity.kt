@@ -43,8 +43,7 @@ class JoinTrainerActivity : BaseActivity() {
                         Toast.makeText(
                             this@JoinTrainerActivity,
                             "필수 항목을 모두 입력해주세요",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                            Toast.LENGTH_SHORT).show()
                     }
 
                 }

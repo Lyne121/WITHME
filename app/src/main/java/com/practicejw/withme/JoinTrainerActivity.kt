@@ -1,22 +1,19 @@
 package com.practicejw.withme
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextWatcher
-import android.widget.EditText
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.practicejw.withme.datas.BasicResponse
-import kotlinx.android.synthetic.main.join_trainer_activity.*
-import org.w3c.dom.Text
+import kotlinx.android.synthetic.main.activity_join_trainer.*
 import retrofit2.Call
 import retrofit2.Response
 
 class JoinTrainerActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.join_trainer_activity)
+        setContentView(R.layout.activity_join_trainer)
 
 
         btnJoin.setOnClickListener {

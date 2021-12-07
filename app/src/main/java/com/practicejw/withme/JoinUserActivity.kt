@@ -1,30 +1,28 @@
 package com.practicejw.withme
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.activity_main_login.*
-import kotlinx.android.synthetic.main.join_trainer_activity.*
-import kotlinx.android.synthetic.main.join_user_activity.*
-import kotlinx.android.synthetic.main.join_user_activity.btnJoin
-import kotlinx.android.synthetic.main.join_user_activity.edtIdJoin
-import kotlinx.android.synthetic.main.join_user_activity.edtNick
-import kotlinx.android.synthetic.main.join_user_activity.edtPhone
-import kotlinx.android.synthetic.main.join_user_activity.edtPwJoin
+import kotlinx.android.synthetic.main.activity_join_trainer.*
+import kotlinx.android.synthetic.main.activity_join_user.*
+import kotlinx.android.synthetic.main.activity_join_user.edtIdJoin
+import kotlinx.android.synthetic.main.activity_join_user.edtNick
+import kotlinx.android.synthetic.main.activity_join_user.edtPhone
+import kotlinx.android.synthetic.main.activity_join_user.edtPwJoin
 import retrofit2.Call
 import retrofit2.Response
-import javax.security.auth.callback.Callback
+
 // BaseActivity를 상속받게 설정해야 함
 class JoinUserActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.join_user_activity)
+        setContentView(R.layout.activity_join_user)
 
 
-        btnJoin.setOnClickListener {
+        btnJoinU.setOnClickListener {
 
 //            입력한 id, pw, nick, phone 변수에 저장
             val inputIdJoin = edtIdJoin.text.toString()

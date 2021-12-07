@@ -9,7 +9,7 @@ import android.os.Looper
 class mainLodingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_loding_activity)
+        setContentView(R.layout.activity_main_loding)
 
         val myhandler = Handler(Looper.getMainLooper() )
 

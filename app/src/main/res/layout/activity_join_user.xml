@@ -87,7 +87,7 @@
 
 
         <Button
-            android:id="@+id/btnJoin"
+            android:id="@+id/btnJoinU"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:backgroundTint="#4374D9"

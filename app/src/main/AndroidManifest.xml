@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WITHME">
         <activity
-            android:name=".FindIdPw"
+            android:name=".FindIdPwActivity"
             android:exported="false" />
         <activity
             android:name=".JoinTrainerActivity"

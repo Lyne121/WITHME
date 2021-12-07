@@ -34,4 +34,14 @@ interface ServerAPIInterface {
 
     ) : Call<BasicResponse>
 
+//    비밀번호 찾기 기능
+    @FormUrlEncoded
+    @POST("/user/find/password")
+    fun postRequestFindPw(
+
+    @Field("email") email: String,
+    @Field("nick_name") nick : String,
+
+    ) : Call<BasicResponse>
+
 }

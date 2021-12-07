@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FindIdPw">
+    tools:context=".FindIdPwActivity">
 
 
 <!--    사용자 아이디 찾기 -->
@@ -52,6 +52,7 @@
         android:text="닉네임" />
 
     <EditText
+        android:id="@+id/edtNick_findPw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="닉네임을 입력해 주세요"/>
@@ -62,6 +63,7 @@
         android:text="이메일"/>
 
     <EditText
+        android:id="@+id/edtEmail_findPw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이메일을 입력해 주세요"/>
@@ -69,6 +71,7 @@
 
 
     <Button
+        android:id="@+id/btnFindPw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="확인(비밀번호 찾기)" />

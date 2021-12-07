@@ -108,6 +108,7 @@
             android:background="#000000"/>
 
         <Button
+            android:id="@+id/btnFindPw"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"

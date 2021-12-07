@@ -68,5 +68,12 @@ class MainLoginActivity : BaseActivity() {
             startActivity(intent)
 
         }
+
+//        아이디, 비밀번호 찾기 버튼 > 찾기 페이지 이동
+        btnFindPw.setOnClickListener {
+            val intent = Intent(this@MainLoginActivity, FindIdPwActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

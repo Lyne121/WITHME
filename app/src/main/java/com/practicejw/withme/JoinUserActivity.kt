@@ -6,9 +6,13 @@ import android.os.Bundle
 import android.widget.Toast
 import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.activity_main_login.*
+import kotlinx.android.synthetic.main.join_trainer_activity.*
 import kotlinx.android.synthetic.main.join_user_activity.*
 import kotlinx.android.synthetic.main.join_user_activity.btnJoin
 import kotlinx.android.synthetic.main.join_user_activity.edtIdJoin
+import kotlinx.android.synthetic.main.join_user_activity.edtNick
+import kotlinx.android.synthetic.main.join_user_activity.edtPhone
+import kotlinx.android.synthetic.main.join_user_activity.edtPwJoin
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
@@ -26,7 +30,6 @@ class JoinUserActivity : BaseActivity() {
             val inputPwJoin = edtPwJoin.text.toString()
             val inputNick = edtNick.text.toString()
             val inputPhone = edtPhone.text.toString()
-
 //            서버에 로그인 요청 > BaseActivity가 물려준 서버 기능 목록 활용
 
             apiService.postRequestJoin(
@@ -61,5 +64,6 @@ class JoinUserActivity : BaseActivity() {
                 }  )
 
         }
+
     }
 }

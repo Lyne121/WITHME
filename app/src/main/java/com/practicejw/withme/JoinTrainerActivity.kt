@@ -3,9 +3,13 @@ package com.practicejw.withme
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextWatcher
+import android.widget.EditText
 import android.widget.Toast
+import androidx.core.widget.addTextChangedListener
 import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.join_trainer_activity.*
+import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.Response
 
@@ -51,20 +55,36 @@ class JoinTrainerActivity : BaseActivity() {
                 override fun onFailure(call: Call<BasicResponse>, t: Throwable) {
                 }
 
-            }  )
+            })
 
         }
 
 
-        val inputPwRe = edtPwRe.text.toString()
-        val inputPw = edtPwJoin.text.toString()
+        edtPwRe.addTextChangedListener {
 
-        if (inputPwRe != inputPw) {
+            val PwRe = edtPwRe.text.toString()
+            val Pw = edtPwJoin.text.toString()
+            val PwNot = txtPwNot
 
-            txtPwNot.text = "비밀번호가 일치하지 않습니다"
+            if ( PwRe == Pw ) {
+
+                PwNot.text = "확인 완료"
+
+            }
+
+            else {
+                PwNot.text = "비밀번호 불일치"
+
+            }
+
 
         }
-
 
     }
+
+
+
 }
+
+
+

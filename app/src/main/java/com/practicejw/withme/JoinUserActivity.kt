@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.core.widget.addTextChangedListener
 import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.activity_main_login.*
 import kotlinx.android.synthetic.main.join_trainer_activity.*
@@ -65,5 +66,21 @@ class JoinUserActivity : BaseActivity() {
 
         }
 
+
+
+        edtPwReU.addTextChangedListener {
+            val PwRe = edtPwReU.text.toString()
+            val Pw = edtPwJoin.text.toString()
+            val PwNot = txtPwNotU
+
+            if ( PwRe == Pw ) {
+
+                PwNot.text = "확인 완료"
+            }
+
+            else {
+                PwNot.text = "비밀번호 불일치"
+            }
+        }
     }
 }

@@ -19,5 +19,10 @@ class JoinTypeActivity : AppCompatActivity() {
 
 //        회원가입(트레이너) 버튼 > 회원가입(트레이너)페이지(생성예정) 이동
 
+        btnJoinTrainer.setOnClickListener {
+            val myIntent = Intent( this@JoinTypeActivity, JoinTrainerActivity::class.java)
+            startActivity(myIntent)
+        }
+
     }
 }

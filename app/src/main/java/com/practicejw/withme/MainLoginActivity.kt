@@ -38,7 +38,7 @@ class MainLoginActivity : BaseActivity() {
 
 //                        로그인 시도 > 로그인 성공인 경우
 //                        해야할 일 : 화면 이동 (Intent)
-                        val myIntent = Intent(this@MainLoginActivity, MainSearchTActivity::class.java)
+                        val myIntent = Intent(this@MainLoginActivity, UserFirstActivity::class.java)
                         startActivity(myIntent)
 
                         finish()

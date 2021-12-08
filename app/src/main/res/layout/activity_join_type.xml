@@ -17,7 +17,6 @@
 
 <!--    3단계를 나타내는 이미지 추가 예정 -->
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

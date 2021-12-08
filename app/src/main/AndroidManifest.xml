@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WITHME">
         <activity
+            android:name=".UserFirstActivity"
+            android:exported="false" />
+        <activity
             android:name=".FindIdPwActivity"
             android:exported="false" />
         <activity

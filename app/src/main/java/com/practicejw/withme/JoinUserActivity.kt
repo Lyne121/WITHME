@@ -31,7 +31,7 @@ class JoinUserActivity : BaseActivity() {
             val inputPhone = edtPhone.text.toString()
 
 //            서버에 로그인 요청 > BaseActivity가 물려준 서버 기능 목록 활용
-            apiService.postRequestJoin(
+            apiService.putRequestJoin(
                 inputIdJoin,
                 inputPwJoin,
                 inputNick,

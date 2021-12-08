@@ -23,7 +23,7 @@ class JoinTrainerActivity : BaseActivity() {
             val inputNick = edtNick.text.toString()
             val inputPhone = edtPhone.text.toString()
 
-            apiService.postRequestJoin(
+            apiService.putRequestJoin(
                 inputID,
                 inputPw,
                 inputNick,

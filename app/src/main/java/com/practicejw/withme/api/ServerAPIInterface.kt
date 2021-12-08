@@ -21,9 +21,9 @@ interface ServerAPIInterface {
 //    회원가입 기능
     @FormUrlEncoded
     @PUT("/user")
-    fun postRequestJoin(
+    fun putRequestJoin(
 
-    @Field("email") email: String,
+    @Field("email") email: String, // formData 방식 요청 시 > @Field
     @Field("password") pw : String,
     @Field("nick_name") nick : String,
     @Field("phone") phone : String,
@@ -35,7 +35,8 @@ interface ServerAPIInterface {
     @GET("/user/find/email")
     fun getRequestFindId( // GET 방식의 함수는 getRequest, POST방식은 postRequest로 이름붙이는게 좋음
 
-    @Query("nick_name") nick: String, //서버세어 query로 달라고 요청 시 query로 담아준다
+
+    @Query("nick_name") nick: String, // query 방식 요청 시 > @Query
     @Query("phone") phone: String,
 
     ) : Call<BasicResponse>

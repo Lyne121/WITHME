@@ -11,100 +11,128 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:background="#4374D9"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:text="회 원 가 입 (T)" />
+        android:background="#4374D9" />
 
-<!--    내용-->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:padding="30dp">
+        android:layout_height="match_parent" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="이메일" />
-
-        <EditText
-            android:id="@+id/edtIdJoin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="이메일 입력"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="비밀번호" />
-
-        <EditText
-            android:id="@+id/edtPwJoin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="사용할 비밀번호 입력"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="비밀번호 확인" />
-
-
-        <EditText
-            android:id="@+id/edtPwRe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="비밀번호 확인"/>
-
-        <TextView
-            android:id="@+id/txtPwNot"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""/>
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="회 원 가 입" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="닉네임" />
+
+            <EditText
+                android:id="@+id/edtNick"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:paddingStart="10dp"
+                android:hint="닉네임 입력"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="이메일" />
+
+            <EditText
+                android:id="@+id/edtIdJoin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:paddingStart="10dp"
+                android:hint="이메일 입력"/>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="닉네임" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="비밀번호" />
 
-        <EditText
-            android:id="@+id/edtNick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="사용할 닉네임 입력"/>
+            <EditText
+                android:id="@+id/edtPwJoin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:paddingStart="10dp"
+                android:hint="사용할 비밀번호 입력"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="핸드폰 번호" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/edtPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="사용할 핸드폰 번호 입력(아이디찾기에서 활용)"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 확인" />
+
+                <TextView
+                    android:id="@+id/txtPwNot"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="20dp"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
 
 
-        <Button
-            android:id="@+id/btnJoin"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:backgroundTint="#4374D9"
-            android:textSize="20sp"
-            android:text="회 원  가 입" />
+            <EditText
+                android:id="@+id/edtPwRe"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:paddingStart="10dp"
+                android:hint="비밀번호 확인"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="핸드폰 번호" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:paddingStart="10dp"
+                android:hint="- 없이 휴대폰 번호를 입력해 주세요"/>
 
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnJoin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#4374D9"
+                android:textSize="20sp"
+                android:text="회 원  가 입" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:background="#4374D9"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

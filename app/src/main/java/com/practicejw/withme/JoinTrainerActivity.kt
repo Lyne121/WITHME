@@ -1,6 +1,7 @@
 package com.practicejw.withme
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.text.TextWatcher
 import android.widget.Toast
@@ -61,12 +62,14 @@ class JoinTrainerActivity : BaseActivity() {
             val PwNot = txtPwNot
 
             if ( PwRe == Pw ) {
-                PwNot.text = "확인 완료"
-            }
+                PwNot.text = "일치 확인"
+                PwNot.setTextColor( Color.parseColor("#6799FF") )
+                }
 
             else {
                 PwNot.text = "비밀번호 불일치"
-            }
+                PwNot.setTextColor( Color.parseColor("#FF0000"))
+                }
         }
 
         edtPwJoin.addTextChangedListener {
@@ -75,12 +78,14 @@ class JoinTrainerActivity : BaseActivity() {
             val PwNot = txtPwNot
 
             if ( Pw == PwRe ) {
-                PwNot.text = "확인 완료"
-            }
+                PwNot.text = "일치 확인"
+                PwNot.setTextColor( Color.parseColor("#6799FF") )
+                }
 
             else {
                 PwNot.text = "비밀번호 불일치"
-            }
+                PwNot.setTextColor( Color.parseColor("#FF0000"))
+                }
         }
     }
 

@@ -91,13 +91,11 @@ class JoinUserActivity : BaseActivity() {
             if ( Pw == PwRe ) {
                 PwNot.text = "일치 확인"
                 PwNot.setTextColor( Color.parseColor("#6799FF") )
-
             }
 
             else {
                 PwNot.text = "비밀번호 불일치"
                 PwNot.setTextColor( Color.parseColor("#FF0000") )
-
             }
         }
     }

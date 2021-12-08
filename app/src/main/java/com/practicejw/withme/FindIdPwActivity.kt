@@ -20,16 +20,16 @@ class FindIdPwActivity : BaseActivity() {
         setContentView(R.layout.activity_find_id_pw)
 
 //        버튼 > 아이디/비번 레이아웃 전환
-        Linear_FindId.visibility = View.VISIBLE
-        Linear_FindPw.visibility = View.GONE
+        layFindId.visibility = View.VISIBLE
+        layFindPw.visibility = View.GONE
 
         btnToFindId.setOnClickListener {
 
 //            1. 아이디찾기 레이아웃 보여주기 (VISIBLE)
-            Linear_FindId.visibility = View.VISIBLE
+            layFindId.visibility = View.VISIBLE
 
 //            2. 비번찾기 레이아웃 숨김 (GONE)
-            Linear_FindPw.visibility = View.GONE
+            layFindPw.visibility = View.GONE
 
         }
 
@@ -37,10 +37,10 @@ class FindIdPwActivity : BaseActivity() {
 
 //            아이디 찾기 버튼과 반대로 동작
 //            1. 비번찾기 레이아웃 보여주기
-            Linear_FindPw.visibility = View.VISIBLE
+            layFindPw.visibility = View.VISIBLE
 
 //            2. 아이디찾기 레이아웃 숨기기
-            Linear_FindId.visibility = View.GONE
+            layFindId.visibility = View.GONE
 
         }
 
@@ -49,7 +49,7 @@ class FindIdPwActivity : BaseActivity() {
             val inputNick = edtNick_findId.text.toString()
             val inputPhone = edtPhone_findId.text.toString()
             
-            apiService.postRequestFindId(
+            apiService.getRequestFindId(
                 inputNick,
                 inputPhone
             ).enqueue( object : Callback<BasicResponse> {

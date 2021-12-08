@@ -50,7 +50,7 @@
 
 <!--        아이디 찾기-->
         <LinearLayout
-            android:id="@+id/Linear_FindId"
+            android:id="@+id/layFindId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ffffff"
@@ -95,7 +95,7 @@
 
 <!--        비밀번호 찾기-->
         <LinearLayout
-            android:id="@+id/Linear_FindPw"
+            android:id="@+id/layFindPw"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ffffff"

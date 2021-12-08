@@ -9,7 +9,6 @@ interface ServerAPIInterface {
 //    서버가 주는 기능 하나하나를 > 함수 하나하나로 대응
 
 //    로그인 기능
-
     @FormUrlEncoded
     @POST("/user")
     fun postRequestLogin(
@@ -32,12 +31,12 @@ interface ServerAPIInterface {
     ) : Call<BasicResponse>
 
 //    아이디 찾기 기능
-    @FormUrlEncoded
+//    @FormUrlEncoded // 얘는 POST / PUT / PATCH 일때만 사용
     @GET("/user/find/email")
-    fun postRequestFindId(
+    fun getRequestFindId( // GET 방식의 함수는 getRequest, POST방식은 postRequest로 이름붙이는게 좋음
 
-    @Field("nick_name") nick: String,
-    @Field("phone") phone: String,
+    @Query("nick_name") nick: String, //서버세어 query로 달라고 요청 시 query로 담아준다
+    @Query("phone") phone: String,
 
     ) : Call<BasicResponse>
 

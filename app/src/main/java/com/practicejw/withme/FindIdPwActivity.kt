@@ -3,6 +3,10 @@ package com.practicejw.withme
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Layout
+import android.view.View
+import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.Toast
 import com.practicejw.withme.datas.BasicResponse
 import kotlinx.android.synthetic.main.activity_find_id_pw.*
@@ -52,6 +56,30 @@ class FindIdPwActivity : BaseActivity() {
 
             }
 
+
+        Linear_FindId.visibility = View.VISIBLE
+        Linear_FindPw.visibility = View.GONE
+
+        btnToFindId.setOnClickListener {
+
+//            1. 아이디찾기 레이아웃 보여주기 (VISIBLE)
+            Linear_FindId.visibility = View.VISIBLE
+
+//            2. 비번찾기 레이아웃 숨김 (GONE)
+            Linear_FindPw.visibility = View.GONE
+
+        }
+
+        btnToFindPw.setOnClickListener {
+
+//            아이디 찾기 버튼과 반대로 동작
+//            1. 비번찾기 레이아웃 보여주기
+            Linear_FindPw.visibility = View.VISIBLE
+
+//            2. 아이디찾기 레이아웃 숨기기
+            Linear_FindId.visibility = View.GONE
+
+        }
     }
 
 }

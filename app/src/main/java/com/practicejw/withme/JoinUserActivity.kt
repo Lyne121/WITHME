@@ -76,6 +76,10 @@ class JoinUserActivity : BaseActivity() {
                 PwNot.text = "확인 완료"
             }
 
+            else if ( Pw == PwRe ) {
+                PwNot.text = "확인 완료"
+            }
+
             else {
                 PwNot.text = "비밀번호 불일치"
             }

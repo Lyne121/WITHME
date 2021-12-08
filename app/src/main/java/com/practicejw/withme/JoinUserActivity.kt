@@ -65,18 +65,26 @@ class JoinUserActivity : BaseActivity() {
         }
 
 
-
         edtPwReU.addTextChangedListener {
             val PwRe = edtPwReU.text.toString()
             val Pw = edtPwJoin.text.toString()
             val PwNot = txtPwNotU
 
             if ( PwRe == Pw ) {
-
                 PwNot.text = "확인 완료"
             }
 
-            else if ( Pw == PwRe ) {
+            else {
+                PwNot.text = "비밀번호 불일치"
+            }
+        }
+
+        edtPwJoin.addTextChangedListener {
+            val PwRe = edtPwReU.text.toString()
+            val Pw = edtPwJoin.text.toString()
+            val PwNot = txtPwNotU
+
+            if ( Pw == PwRe ) {
                 PwNot.text = "확인 완료"
             }
 

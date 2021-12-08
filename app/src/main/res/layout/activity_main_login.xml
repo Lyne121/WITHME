@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="50dp"
+    android:padding="30dp"
     tools:context=".MainLoginActivity">
 
     <TextView
@@ -116,7 +116,7 @@
             android:textColor="#000000"
             android:backgroundTint="#00000000"
             style="?android:attr/borderlessButtonStyle"
-            android:text="비 밀 번 호  찾 기" />
+            android:text="아이디 / 비밀번호 찾기" />
 
 
     </LinearLayout>

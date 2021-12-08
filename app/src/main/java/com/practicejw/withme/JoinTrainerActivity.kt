@@ -15,7 +15,6 @@ class JoinTrainerActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_join_trainer)
 
-
         btnJoin.setOnClickListener {
 
             val inputID = edtIdJoin.text.toString()
@@ -54,7 +53,6 @@ class JoinTrainerActivity : BaseActivity() {
             })
 
         }
-
 
         edtPwRe.addTextChangedListener {
 

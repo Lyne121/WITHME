@@ -1,7 +1,9 @@
 package com.practicejw.withme
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.practicejw.withme.datas.BasicResponse
@@ -20,7 +22,6 @@ class JoinUserActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_join_user)
-
 
         btnJoinU.setOnClickListener {
 
@@ -64,18 +65,21 @@ class JoinUserActivity : BaseActivity() {
 
         }
 
-
         edtPwReU.addTextChangedListener {
             val PwRe = edtPwReU.text.toString()
             val Pw = edtPwJoin.text.toString()
             val PwNot = txtPwNotU
 
             if ( PwRe == Pw ) {
-                PwNot.text = "확인 완료"
+                PwNot.text = "일치 확인"
+                PwNot.setTextColor( Color.parseColor("#6799FF") ) //parse의 기본 재료로 RGB 값
+
             }
 
             else {
                 PwNot.text = "비밀번호 불일치"
+                PwNot.setTextColor( Color.parseColor("#FF0000") )
+
             }
         }
 
@@ -85,11 +89,15 @@ class JoinUserActivity : BaseActivity() {
             val PwNot = txtPwNotU
 
             if ( Pw == PwRe ) {
-                PwNot.text = "확인 완료"
+                PwNot.text = "일치 확인"
+                PwNot.setTextColor( Color.parseColor("#6799FF") )
+
             }
 
             else {
                 PwNot.text = "비밀번호 불일치"
+                PwNot.setTextColor( Color.parseColor("#FF0000") )
+
             }
         }
     }

@@ -12,10 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:background="#4374D9"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:text="회 원 가 입" />
+        android:background="#4374D9" />
 
     <LinearLayout
         android:layout_width="match_parent"

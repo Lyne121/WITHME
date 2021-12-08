@@ -19,6 +19,62 @@ class FindIdPwActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_find_id_pw)
 
+//        버튼 > 아이디/비번 레이아웃 전환
+        Linear_FindId.visibility = View.VISIBLE
+        Linear_FindPw.visibility = View.GONE
+
+        btnToFindId.setOnClickListener {
+
+//            1. 아이디찾기 레이아웃 보여주기 (VISIBLE)
+            Linear_FindId.visibility = View.VISIBLE
+
+//            2. 비번찾기 레이아웃 숨김 (GONE)
+            Linear_FindPw.visibility = View.GONE
+
+        }
+
+        btnToFindPw.setOnClickListener {
+
+//            아이디 찾기 버튼과 반대로 동작
+//            1. 비번찾기 레이아웃 보여주기
+            Linear_FindPw.visibility = View.VISIBLE
+
+//            2. 아이디찾기 레이아웃 숨기기
+            Linear_FindId.visibility = View.GONE
+
+        }
+
+//        아이디 찾기
+        btnFindId.setOnClickListener { 
+            val inputNick = edtNick_findId.text.toString()
+            val inputPhone = edtPhone_findId.text.toString()
+            
+            apiService.postRequestFindId(
+                inputNick,
+                inputPhone
+            ).enqueue( object : Callback<BasicResponse> {
+                override fun onResponse(
+                    call: Call<BasicResponse>,
+                    response: Response<BasicResponse>
+                ) {
+                    if ( response.isSuccessful) {
+
+                        Toast.makeText(this@FindIdPwActivity, "아이디를 해당 번호에 문자로 전송하였습니다", Toast.LENGTH_SHORT).show()
+                    }
+
+                    else {
+                        Toast.makeText(this@FindIdPwActivity, "일치하는 회원 정보가 없습니다. 닉네임 또는 휴대폰 번호를 확인해주세요", Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                override fun onFailure(call: Call<BasicResponse>, t: Throwable) {
+                }
+                }    )
+
+        }
+
+
+//        비밀번호 찾기
         btnFindPw.setOnClickListener {
 
             val inputNick = edtNick_findPw.text.toString()
@@ -57,29 +113,7 @@ class FindIdPwActivity : BaseActivity() {
             }
 
 
-        Linear_FindId.visibility = View.VISIBLE
-        Linear_FindPw.visibility = View.GONE
 
-        btnToFindId.setOnClickListener {
-
-//            1. 아이디찾기 레이아웃 보여주기 (VISIBLE)
-            Linear_FindId.visibility = View.VISIBLE
-
-//            2. 비번찾기 레이아웃 숨김 (GONE)
-            Linear_FindPw.visibility = View.GONE
-
-        }
-
-        btnToFindPw.setOnClickListener {
-
-//            아이디 찾기 버튼과 반대로 동작
-//            1. 비번찾기 레이아웃 보여주기
-            Linear_FindPw.visibility = View.VISIBLE
-
-//            2. 아이디찾기 레이아웃 숨기기
-            Linear_FindId.visibility = View.GONE
-
-        }
     }
 
 }

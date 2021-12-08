@@ -34,7 +34,7 @@ interface ServerAPIInterface {
 //    아이디 찾기 기능
     @FormUrlEncoded
     @GET("/user/find/email")
-    fun PostRequestFindId(
+    fun postRequestFindId(
 
     @Field("nick_name") nick: String,
     @Field("phone") phone: String,

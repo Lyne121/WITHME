@@ -63,6 +63,7 @@
                 android:text="닉네임" />
 
             <EditText
+                android:id="@+id/edtNick_findId"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,12 +76,14 @@
                 android:text="휴대폰 번호"/>
 
             <EditText
+                android:id="@+id/edtPhone_findId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="-없이 휴대폰 번호를 입력해 주세요"/>
 
             <Button
+                android:id="@+id/btnFindId"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"

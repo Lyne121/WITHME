@@ -2,10 +2,7 @@ package com.practicejw.withme.api
 
 import com.practicejw.withme.datas.BasicResponse
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
-import retrofit2.http.PUT
+import retrofit2.http.*
 
 interface ServerAPIInterface {
 
@@ -33,6 +30,17 @@ interface ServerAPIInterface {
     @Field("phone") phone : String,
 
     ) : Call<BasicResponse>
+
+//    아이디 찾기 기능
+    @FormUrlEncoded
+    @GET("/user/find/email")
+    fun PostRequestFindId(
+
+    @Field("nick_name") nick: String,
+    @Field("phone") phone: String,
+
+    ) : Call<BasicResponse>
+
 
 //    비밀번호 찾기 기능
     @FormUrlEncoded
